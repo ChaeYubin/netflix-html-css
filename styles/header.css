@@ -1,0 +1,42 @@
+/* header */
+.navbar {
+  background-color: #111;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navbar li {
+  list-style: none;
+  padding: 1rem;
+}
+
+.navbar li a {
+  padding: 2px 2px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.navbar li a:hover {
+  color: gray;
+}
+
+.logo {
+  height: 45px;
+  width: 90px;
+}
+
+.logo img {
+  width: 100%;
+}

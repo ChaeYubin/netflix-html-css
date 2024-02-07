@@ -5,6 +5,7 @@
   background-position: center;
   color: white;
   height: 448px;
+  margin-bottom: 40px;
 }
 
 .banner_contents {
@@ -45,11 +46,11 @@
 
 /* row */
 .row {
-  color: #fff;
+  color: var(--text-color);
 }
 
 .row h2 {
-  color: #fff;
+  color: var(--text-color);
   margin-left: 25px;
   margin-top: 20px;
 }

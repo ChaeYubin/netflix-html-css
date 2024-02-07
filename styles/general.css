@@ -4,5 +4,15 @@
 }
 
 body {
-  background-color: #111;
+  background-color: var(--primary);
+}
+
+:root {
+  --primary: #111;
+  --text-color: #fff;
+}
+
+:root.lightTheme {
+  --primary: rgb(245, 242, 241);
+  --text-color: rgb(50, 51, 53);
 }

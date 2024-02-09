@@ -60,22 +60,69 @@
   overflow-y: hidden;
   overflow-x: scroll;
   padding: 20px;
+  gap: 12px;
+}
+
+.row_poster_container {
+  max-width: 167px;
+  max-height: 250px;
+  transition: transform 450ms;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.row_poster_detail {
+  position: relative;
+  height: 80px;
+  bottom: 120px;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 0, 0, 0),
+    rgba(255, 0, 0, 1)
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: first baseline;
+  justify-content: flex-start;
+  padding: 40px 10px 0 10px;
+  color: white;
+  opacity: 0;
+  transition: opacity 450ms, transform 450ms;
+}
+
+.row_poster_title {
+  font-size: 1.05rem;
+  margin-bottom: 3px;
+}
+
+.row_poster_description {
+  display: -webkit-box;
+  font-size: 0.8rem;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
 }
 
 .row_poster {
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
   max-height: 100px;
-  margin-right: 10px;
   transition: transform 450ms;
+  vertical-align: bottom;
 }
 
 .row_poster_large {
   max-height: 250px;
+  width: 100%;
 }
 
-.row_poster:hover {
+.row_poster_container:hover {
   transform: scale(1.1);
+}
+
+.row_poster_container:hover > .row_poster_detail {
+  opacity: 1;
 }
 
 .row_posters::-webkit-scrollbar {

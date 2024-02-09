@@ -93,6 +93,7 @@
 .row_poster_title {
   font-size: 1.05rem;
   margin-bottom: 3px;
+  font-weight: 600;
 }
 
 .row_poster_description {
@@ -118,6 +119,10 @@
 }
 
 .row_poster_container:hover {
+  transform: scale(1.1);
+}
+
+.row_posters > .row_poster:hover {
   transform: scale(1.1);
 }
 

@@ -6,6 +6,17 @@
   color: white;
   height: 448px;
   margin-bottom: 40px;
+  position: relative;
+}
+
+.banner_contents::before {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: "";
+  width: 100%;
+  height: 25px;
+  background: linear-gradient(to bottom, #00000000, var(--primary));
 }
 
 .banner_contents {

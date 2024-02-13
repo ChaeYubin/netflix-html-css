@@ -23,18 +23,23 @@
 .banner_btn {
   margin-top: 5px;
   margin-bottom: 10px;
+  display: flex;
+  gap: 10px;
 }
 
 .banner_btn button {
-  width: 60px;
+  width: 90px;
   height: 30px;
-  color: black;
-  border-radius: 2px;
+  color: white;
+  background-color: #38383896;
+  border-radius: 3px;
   border: 1px solid transparent;
+  transition: background-color 400ms, color 400ms;
 }
 
 .banner_btn button:hover {
-  background-color: rgb(171, 163, 163);
+  background-color: rgb(231, 231, 231);
+  color: black;
   cursor: pointer;
 }
 
